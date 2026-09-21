@@ -23,27 +23,39 @@ class _LoginPageState extends State<LoginPage> {
         children: [
           CustomText(
             text: "Welcome to application $statusLogin",
-            color: const Color.fromARGB(255, 7, 205, 96), // ganti warna teks di sini
+            color: const Color.fromARGB(
+              255,
+              7,
+              205,
+              96,
+            ), // ganti warna teks di sini
             fontSize: 30,
           ),
           Container(
             margin: EdgeInsets.all(10),
             child: CustomTextfield(
-              myHint: "input username",
+              Hint: "input username",
               txtController: txtUsername,
+              obscureText: false,
             ),
           ),
           Container(
             margin: EdgeInsets.all(10),
             child: CustomTextfield(
-              myHint: "input password",
+              Hint: "input password",
               txtController: txtPassword,
+              obscureText: true,
             ),
           ),
 
           CustomButton(
             label: "Login",
-            textColor: const Color.fromARGB(255, 2, 96, 12), // ganti warna teks button di sini
+            textColor: const Color.fromARGB(
+              255,
+              2,
+              96,
+              12,
+            ), // ganti warna teks button di sini
             fontSize: 30,
             onPressed: () {
               setState(() {
