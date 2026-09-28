@@ -1,6 +1,6 @@
-import 'package:belajarflutter/components/custome_textField.dart';
 import 'package:belajarflutter/components/custom_text.dart';
 import 'package:belajarflutter/components/custom_button.dart';
+import 'package:belajarflutter/components/custom_textfield.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -23,12 +23,7 @@ class _LoginPageState extends State<LoginPage> {
         children: [
           CustomText(
             text: "Welcome to application $statusLogin",
-            color: const Color.fromARGB(
-              255,
-              7,
-              205,
-              96,
-            ), // ganti warna teks di sini
+            color: const Color.fromARGB(255, 7, 205, 96),
             fontSize: 30,
           ),
           Container(
@@ -50,12 +45,7 @@ class _LoginPageState extends State<LoginPage> {
 
           CustomButton(
             label: "Login",
-            textColor: const Color.fromARGB(
-              255,
-              2,
-              96,
-              12,
-            ), // ganti warna teks button di sini
+            textColor: const Color.fromARGB(255, 2, 96, 12),
             fontSize: 30,
             onPressed: () {
               setState(() {
